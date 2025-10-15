@@ -1,0 +1,49 @@
+<!--
+  @author : Sreelekha Mondal.
+  @date : 14 October, 2025. 
+  @topic : Create an input box and button. Add tasks to a list when clicked.
+           Add a delete button for each task.
+           Change the background color when a button is clicked.
+-->
+
+<!-- Doctype is used for HTML 5. -->
+<!DOCTYPE html>
+<html>
+
+  <!-- The head tag is used define the head of the webpage where the title of the webpage will appear. -->
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+
+    <!-- The title of the web page -->
+    <title> DIY-06_Sreelekha_Mondal </title>
+
+    <!-- This <link> element is used to establish the relation between this html document and the specific external CSS document. -->
+    <link rel = "stylesheet" href = "CSS_DIY-06_Sreelekha_Mondal_II.css">
+
+  </head>
+
+  <!-- The body tag is used define the body of the webpage where the content of the webpage will appear. -->
+  <body class = "body">
+
+    <!-- Adding all the elements within a div -->
+    <div class = "div">
+
+      <!-- The content of the element is manipulated by Javascript. -->
+      <h3 id = "heading"></h3>
+
+      <!-- Taking the input from the user to create the list. -->
+      <input type = "text" id = "to_do" placeholder = "plan your shedule" class = "border">
+
+      <!-- Submit button. -->
+      <button onclick = "addTask()" class = "button">ADD TASK</button>
+
+      <!-- This dynamic list will hold the todo list. -->
+      <ul id = "todo_list"></ul>
+    </div>
+
+    <script src = "JS_DIY-06_Sreelekha_Mondal_II.js"></script>
+  </body>
+
+<!-- End of the html code. -->
+</html>
