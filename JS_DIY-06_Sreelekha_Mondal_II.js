@@ -43,12 +43,13 @@ function addTask()
   deleteItem.textContent = "DELETE";
   todoItem.appendChild(deleteItem);
 
-  // To delete the list element.
-  deleteItem.addEventListener('click', function()
-  {
-    // removing the li element, by clicking the delete button.
-    todoItem.remove();
-  })
+  deleteItem.onclick = function() {delTask(todoItem)};
+}
+
+function delTask(task)
+{
+  // removing the li element, by clicking the delete button.
+  task.remove();
 }
 
 // Refresh the input field when the page is refreshed.
