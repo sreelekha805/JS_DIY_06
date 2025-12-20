@@ -4,14 +4,17 @@
   HTML file : HTML_DIY-06_Sreelekha_Mondal_II.html
 */
 
+/* import the google font link using import rule */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 /* Styling for the body */
-.body
+body
 {
   margin : 0;
 }
 
-/* stylign for the div element */
-.div
+/* stylign for the parent div element which is containing another div within it. */
+.main_div
 {
   margin : auto;
   margin-top : 30px;
@@ -23,6 +26,10 @@
   color : #7B542F;
 }
 
+/* 
+  To avoid the overlapping of the scrollbar with the border of the parent div, another div element is created within the parent div and 
+  the overflow of the child div is set to auto, so the overflow will not be overlapped with the parent div's border.
+ */
 .overflow
 {
   box-sizing : border-box;
@@ -38,8 +45,8 @@
   font-weight : bold;
 }
 
-/* To set the border of the input field */
-.border
+/* To set the style of the input field */
+.input_field
 {
   height : 25px;
   width : 250px;
@@ -58,9 +65,10 @@
 /* Styling for all the buttons */
 .button
 {
-  height : 30px;
+  height : 32px;
   width : 90px;
-  font-family : Dyuthi;
+  font-family : "Caveat", cursive;
+  font-weight : bold;
   font-size : 16px;
   background-color : #F4E9D7;
   border-radius : 10px;

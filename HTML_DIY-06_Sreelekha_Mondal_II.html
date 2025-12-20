@@ -24,23 +24,30 @@
   </head>
 
   <!-- The body tag is used define the body of the webpage where the content of the webpage will appear. -->
-  <body class = "body">
+  <body>
 
     <!-- Adding all the elements within a div -->
-    <div class = "div"><div class = "overflow">
+    <div class = "main_div">
 
-      <!-- The content of the element is manipulated by Javascript. -->
-      <h3 id = "heading"></h3>
+      <!-- 
+        The div element is used to avoid the overlapping of the parent div's border with scrollbar when any one of the content of the list 
+        is overflowing from the main container.  
+      -->
+      <div class = "overflow">
 
-      <!-- Taking the input from the user to create the list. -->
-      <input type = "text" id = "to_do" placeholder = "plan your shedule" class = "border">
+        <!-- The content of the element is manipulated by Javascript. -->
+        <h3 id = "heading"></h3>
 
-      <!-- Submit button. -->
-      <button onclick = "addTask()" class = "button">ADD TASK</button>
+        <!-- Taking the input from the user to create the list. -->
+        <input type = "text" id = "to_do" placeholder = "plan your shedule" class = "input_field">
 
-      <!-- This dynamic list will hold the todo list. -->
-      <ul id = "todo_list"></ul>
-    </div></div>
+        <!-- Submit button. -->
+        <button onclick = "addTask()" class = "button">ADD TASK</button>
+
+        <!-- This dynamic list will hold the todo list. -->
+        <ul id = "todo_list"></ul>
+      </div>
+    </div>
 
     <script src = "JS_DIY-06_Sreelekha_Mondal_II.js"></script>
   </body>

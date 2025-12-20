@@ -1,13 +1,12 @@
 // Changing the content of the heading tag.
 document.getElementById("heading").innerHTML = "CREATE YOUR TO-DO LIST!!";
 
+// Accessing the input element.
+const userInput = document.getElementById("to_do");
+
 // To create the to-do list this function is created.
 function addTask()
 { 
-
-  // Accessing the input element.
-  const userInput = document.getElementById("to_do");
-
   // Accessing the content of the input field.
   const inputAccess = userInput.value;
 
