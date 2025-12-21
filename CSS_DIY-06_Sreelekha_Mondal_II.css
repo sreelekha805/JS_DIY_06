@@ -26,14 +26,11 @@ body
   color : #7B542F;
 }
 
-/* 
-  To avoid the overlapping of the scrollbar with the border of the parent div, another div element is created within the parent div and 
-  the overflow of the child div is set to auto, so the overflow will not be overlapped with the parent div's border.
- */
-.overflow
+/* maximum and minimum Width for the text of the task. */
+.adjust_width
 {
-  box-sizing : border-box;
-  overflow : auto;
+  min-width : 290px;
+  max-width : 700px;
 }
 
 /* Styling for the text of the list */

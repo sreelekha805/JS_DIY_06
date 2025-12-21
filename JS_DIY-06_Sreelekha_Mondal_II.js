@@ -5,7 +5,7 @@ document.getElementById("heading").innerHTML = "CREATE YOUR TO-DO LIST!!";
 const userInput = document.getElementById("to_do");
 
 // Accessing the ul element by its id.
-  const todoList = document.getElementById("todo_list");
+const todoList = document.getElementById("todo_list");
 
 // To create the to-do list this function is created.
 function addTask()
@@ -24,7 +24,7 @@ function addTask()
   const todoItem = document.createElement("li");
 
   // Adding the css class to style it. 
-  todoItem.classList.add("text");
+  todoItem.classList.add("text", "adjust_width");
 
   //Adding the input given by the user in the li elements.
   todoItem.textContent = inputAccess;
