@@ -4,6 +4,9 @@ document.getElementById("heading").innerHTML = "CREATE YOUR TO-DO LIST!!";
 // Accessing the input element.
 const userInput = document.getElementById("to_do");
 
+// Accessing the ul element by its id.
+  const todoList = document.getElementById("todo_list");
+
 // To create the to-do list this function is created.
 function addTask()
 { 
@@ -16,9 +19,6 @@ function addTask()
     alert("Please enter the valid INPUT");
     return;
   }
-
-  // Accessing the ul element by its id.
-  const todoList = document.getElementById("todo_list");
 
   // Creating the element li dynamically to store the inputs as a list.
   const todoItem = document.createElement("li");
@@ -54,5 +54,5 @@ function delTask(task)
 // Refresh the input field when the page is refreshed.
 window.onload = function ()
 {
-  document.getElementById ("to_do").value = '';
+  userInput.value = '';
 }
